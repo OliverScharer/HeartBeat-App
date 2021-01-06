@@ -17,25 +17,21 @@
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="250dp"
         android:layout_height="90dp"
+        android:textSize="40sp"
         android:backgroundTint="@color/tuerkis"
         android:text="@string/log_in"
         android:textColor="@color/black"
-        android:textSize="40sp"
-        app:cornerRadius="40dp"
+        app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457"
-        tools:ignore="UnusedAttribute" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/registrierButton"
@@ -44,9 +40,9 @@
         android:layout_marginTop="20dp"
         android:text="@string/registrieren"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="25dp"
         app:backgroundTint="@color/Lila"
-        app:cornerRadius="40dp"
+        app:cornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
@@ -57,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/impulse"
+        android:text="Impulse"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
