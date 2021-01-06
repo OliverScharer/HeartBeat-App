@@ -9,4 +9,14 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="meet_greet_heartbeat">Meet. Greet. Heartbeat.</string>
+    <string name="registrieren">registrieren</string>
+    <string name="log_in">Log In</string>
+    <string name="passworteingabe">Passwort:</string>
+    <string name="e_mail_adresse_angeben">E-Mail Adresse angeben:</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="passwort">Passwort</string>
+    <string name="impulse">Impulse</string>
+    <string name="noch_kein_konto_wechsle_zu">noch kein Konto? wechsle zu</string>
+    <string name="registrieren1">Registrieren</string>
 </resources>
