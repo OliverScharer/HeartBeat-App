@@ -22,7 +22,8 @@
         app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        />
 
     <TextView
         android:id="@+id/name"
@@ -57,9 +58,9 @@
         android:layout_width="210dp"
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
-        android:background="@color/white"
         android:ems="10"
-        android:hint="@string/passwort"
+        android:background="@drawable/round_et"
+        android:hint="  Passwort"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,18 +68,20 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginEmail"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+
+        />
 
     <EditText
         android:id="@+id/loginEmail"
         android:layout_width="210dp"
         android:layout_height="40dp"
         android:layout_marginTop="44dp"
-        android:background="@color/white"
+        android:background="@drawable/round_et"
         android:ems="10"
-        android:hint="@string/e_mail"
-        android:importantForAutofill="no"
+        android:hint="  E-Mail"
         android:inputType="textEmailAddress"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +148,7 @@
         android:textColor="@color/black"
         android:textSize="25sp"
         app:backgroundTint="@color/Lila"
-        app:cornerRadius="30dp"
+        app:cornerRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
