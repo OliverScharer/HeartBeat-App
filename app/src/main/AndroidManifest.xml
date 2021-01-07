@@ -23,7 +23,14 @@
             android:name="login"
             >
         </activity>
-
+        <activity
+            android:name="login1"
+            >
+        </activity>
+        <activity
+            android:name="register"
+            >
+        </activity>
     </application>
 
 </manifest>

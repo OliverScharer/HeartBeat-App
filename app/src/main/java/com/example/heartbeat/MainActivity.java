@@ -18,7 +18,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button startbutton;
+    Button startbutton;Button loginButton; Button registrierButton;
 
 
     @Override
@@ -33,7 +33,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, login.class));
             }
+
         });
+
+
+
+
     }
 
     @Override
