@@ -35,6 +35,18 @@
             android:name="profil"
             >
         </activity>
+        <activity
+            android:name="profilanlegen"
+            >
+        </activity>
+        <activity
+            android:name="profilbearbeiten"
+            >
+        </activity>
+        <activity
+            android:name="suchekonfig"
+            >
+        </activity>
 
     </application>
 

@@ -24,7 +24,7 @@ public class register extends AppCompatActivity
         registrierButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(register.this, profil.class));
+                startActivity(new Intent(register.this, profilanlegen.class));
             }
         });
 
