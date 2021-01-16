@@ -19,15 +19,38 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/ivlogo"
+                android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="22dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/zurueck" />
+
+            <ImageView
+                android:id="@+id/ivlogo"
+                android:layout_width="50dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/logo2" />
 
+            <TextView
+                android:id="@+id/oben"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/limelight"
+                android:text="Impulse"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
             <ImageView
                 android:id="@+id/menue"
-                android:layout_width="170dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
