@@ -96,7 +96,7 @@
             android:layout_height="139dp"
             android:orientation="vertical">
 
-            <EditText
+            <TextView
                 android:id="@+id/profilename"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
