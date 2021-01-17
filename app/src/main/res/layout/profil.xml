@@ -137,6 +137,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="35dp"
                 android:layout_weight="0"
+                android:fontFamily="@font/limelight"
                 android:text="Meine Musik"
                 android:textColor="@color/white"
                 android:textSize="28sp" />
