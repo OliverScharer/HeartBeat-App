@@ -19,4 +19,11 @@
     <string name="impulse">Impulse</string>
     <string name="noch_kein_konto_wechsle_zu">noch kein Konto? wechsle zu</string>
     <string name="registrieren1">Registrieren</string>
+
+    <string-array name="sex">
+        <item>Männer</item>
+        <item>Frauen</item>
+        <item>Transexuell</item>
+    </string-array>
+
 </resources>
