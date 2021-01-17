@@ -8,7 +8,7 @@ public class Profilklasse
     private String profilbild;
     private int rock, rap, schlager, blues, elektro, techno, pop;
 
-    public Profilklasse (String profilname, String passwort, String email)
+    public Profilklasse (String profilname, String email, String passwort)
     {
         this.profilname = profilname;
         this.passwort = passwort;

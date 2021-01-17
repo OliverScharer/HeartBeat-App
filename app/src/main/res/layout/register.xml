@@ -49,7 +49,7 @@
 
 
     <TextView
-        android:id="@+id/benutzernametxt"
+        android:id="@+id/genreTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Benutzername"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/registrierungtxt" />
 
     <TextView
-        android:id="@+id/eMailTxt"
+        android:id="@+id/alterTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" E-Mail"
@@ -193,6 +193,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerbestPasswort"
         app:layout_constraintVertical_bias="0.651" />
+
+    <TextView
+        android:id="@+id/txtMeldung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/registrierButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wechselTxt" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

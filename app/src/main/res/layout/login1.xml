@@ -17,7 +17,7 @@
         android:text="@string/meet_greet_heartbeat"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
-        android:textSize="30"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/logintxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.625"
@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logintxt" />
 
     <TextView
-        android:id="@+id/eMailTxt"
+        android:id="@+id/alterTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
