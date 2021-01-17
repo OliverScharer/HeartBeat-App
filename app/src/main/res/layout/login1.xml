@@ -12,18 +12,16 @@
         android:id="@+id/slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/limelight"
         android:text="@string/meet_greet_heartbeat"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
+        android:textSize="30"
         app:layout_constraintBottom_toTopOf="@+id/logintxt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.62"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/name"
@@ -31,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
+        android:fontFamily="@font/limelight"
         android:text="@string/impulse"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -41,7 +40,7 @@
         android:id="@+id/logintxt"
         android:layout_width="215dp"
         android:layout_height="83dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="170dp"
         android:text="@string/log_in"
         android:textAlignment="center"
         android:textColor="@color/tuerkis"
@@ -50,8 +49,9 @@
         app:autoSizeMaxTextSize="60pt"
         app:autoSizeMinTextSize="20pt"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/slogan" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/loginPasswort"
@@ -119,6 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="21dp"
+        android:fontFamily="@font/limelight"
         android:text="noch kein Konto?"
         android:textColor="@color/white"
         android:textSize="25sp"
