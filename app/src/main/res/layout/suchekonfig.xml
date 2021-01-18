@@ -75,7 +75,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/grey"
+            android:background="@color/black"
             android:orientation="vertical">
 
             <LinearLayout
@@ -89,8 +89,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif"
                     android:text="Standort"
@@ -101,9 +101,9 @@
                     android:id="@+id/et_standord"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif"
                     android:text="mein aktueller Standort"
@@ -122,8 +122,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif"
                     android:text="Entfernungslimit"
@@ -135,12 +135,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="100dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif"
-                    android:text="entfernung"
+                    android:text="31 km"
                     android:textColor="@color/graublau"
                     android:textSize="14sp" />
 
@@ -172,11 +172,11 @@
 
                 <TextView
                     android:id="@+id/et_anzeigen"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif"
                     android:text="Anzeigen"
@@ -186,10 +186,10 @@
                 <Spinner
                     android:id="@+id/dd_sex"
                     style="@style/SpinnerTheme"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_weight="1" />
 
             </LinearLayout>
@@ -202,11 +202,11 @@
 
                 <TextView
                     android:id="@+id/et_altersgruppe"
-                    android:layout_width="72dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif"
                     android:text="Altersgruppe"
@@ -216,10 +216,10 @@
                 <Spinner
                     android:id="@+id/dd_age"
                     style="@style/SpinnerTheme"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_weight="1" />
 
 

@@ -38,7 +38,7 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
         Spinner spinner2 = findViewById(R.id.dd_age);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.age, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner2.setAdapter(adapter);
+        spinner2.setAdapter(adapter2);
         spinner2.setOnItemSelectedListener(this);
 
 
