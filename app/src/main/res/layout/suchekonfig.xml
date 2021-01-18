@@ -62,13 +62,13 @@
             <SearchView
                 android:layout_width="329dp"
                 android:layout_height="31dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="40dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="40dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/round_et_search"
 
-               />
+                />
 
         </LinearLayout>
 
@@ -166,7 +166,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/border_layout_grey"
                 android:orientation="horizontal">
 
@@ -184,13 +184,44 @@
                     android:textSize="18sp" />
 
                 <Spinner
-                    android:id="@+id/spinner"
+                    android:id="@+id/dd_sex"
+                    style="@style/SpinnerTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_layout_grey"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/et_altersgruppe"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@drawable/zurueck2_2" />
+                    android:fontFamily="sans-serif"
+                    android:text="Altersgruppe"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/dd_age"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1" />
+
 
             </LinearLayout>
 

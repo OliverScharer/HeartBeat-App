@@ -23,7 +23,20 @@
     <string-array name="sex">
         <item>Männer</item>
         <item>Frauen</item>
-        <item>Transexuell</item>
+        <item>Divers</item>
+        <item>Männer und Frauen</item>
+        <item>Männer und Divers</item>
+        <item>Frauen und Divers</item>
+        <item>Männer, Frauen und Divers</item>
+    </string-array>
+
+    <string-array name = "age">
+        <item>18 - 20</item>
+        <item>20 - 25</item>
+        <item>25 - 30</item>
+        <item>30 - 40</item>
+        <item>40 +</item>
+
     </string-array>
 
 </resources>

@@ -19,6 +19,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/dd_icon</item>
+    </style>
+
     <style name="Theme.HeartBeat.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.HeartBeat.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
