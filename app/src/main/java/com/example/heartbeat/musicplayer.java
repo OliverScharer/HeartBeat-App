@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class musicplayer extends AppCompatActivity
 {
-    ImageView playBtn;
+    ImageButton playBtn;
     SeekBar positionBar, volumeBar;
     TextView elapsedTimeLabel, remainingTimeLabel;
     MediaPlayer mp;
