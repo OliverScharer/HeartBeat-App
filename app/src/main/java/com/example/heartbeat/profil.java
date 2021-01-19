@@ -3,6 +3,8 @@ package com.example.heartbeat;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +34,40 @@ public class profil extends AppCompatActivity
                 startActivity(new Intent(profil.this, suchekonfig.class ));
             }
         });
+
+        ImageButton btnprofil = (ImageButton) findViewById(R.id.btn_profil);
+        btnprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(profil.this, profil.class ));
+            }
+        });
+        ImageButton btnchat = (ImageButton) findViewById(R.id.btn_chat);
+        btnchat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(profil.this, chat.class ));
+            }
+        });
+        ImageButton btnmusic = (ImageButton) findViewById(R.id.btn_music);
+        btnmusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(profil.this, musicplayer.class ));
+            }
+        });
+        ImageButton btnmatch = (ImageButton) findViewById(R.id.btn_matches);
+        btnmatch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(profil.this, matches.class ));
+            }
+        });
+
 
     }
 }

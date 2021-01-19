@@ -102,6 +102,7 @@
                 android:layout_width="300dp"
                 android:layout_height="85dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="50dp"
                 android:background="@drawable/round_grey"
                 android:ems="10"
@@ -139,6 +140,60 @@
                 android:layout_weight="0"
                 app:srcCompat="@drawable/teil_logo" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/border_layout"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                app:srcCompat="@drawable/chat" />
+
+            <ImageButton
+                android:id="@+id/btn_matches"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageButton
+                android:id="@+id/btn_music"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                app:srcCompat="@drawable/music" />
+
+            <ImageButton
+                android:id="@+id/btn_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                app:srcCompat="@drawable/profil_blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="vertical"></LinearLayout>
 
     </LinearLayout>
 

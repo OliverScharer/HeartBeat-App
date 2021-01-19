@@ -41,6 +41,12 @@
         </activity>
         <activity android:name="com.example.heartbeat.suchekonfig" >
         </activity>
+        <activity android:name="com.example.heartbeat.musicplayer" >
+        </activity>
+        <activity android:name="com.example.heartbeat.chat" >
+        </activity>
+        <activity android:name="com.example.heartbeat.matches" >
+        </activity>
 
 
     </application>

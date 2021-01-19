@@ -19,7 +19,7 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
         super.onCreate(savedInstanceState);
         setContentView(R.layout.suchekonfig);
 
-        ImageView z4 = (ImageView) findViewById(R.id.z4);
+        ImageView z4 = (ImageView) findViewById(R.id.zurueck);
         z4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
