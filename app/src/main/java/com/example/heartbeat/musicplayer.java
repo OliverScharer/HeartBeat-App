@@ -98,6 +98,52 @@ public class musicplayer extends AppCompatActivity
             }
         }).start();
 
+    // Bottomnavigation
+// Zurück Button
+        ImageView zurueck = (ImageView) findViewById(R.id.zurueck);
+        zurueck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(musicplayer.this, profil.class));
+            }
+        });
+
+        //Bottomnavigation
+        ImageButton btnprofil = (ImageButton) findViewById(R.id.btn_profil);
+        btnprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(musicplayer.this, profil.class ));
+            }
+        });
+        ImageButton btnchat = (ImageButton) findViewById(R.id.btn_chat);
+        btnchat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(musicplayer.this, chat.class ));
+            }
+        });
+        ImageButton btnmusic = (ImageButton) findViewById(R.id.btn_music);
+        btnmusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(musicplayer.this, musicplayer.class ));
+            }
+        });
+        ImageButton btnmatch = (ImageButton) findViewById(R.id.btn_matches);
+        btnmatch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(musicplayer.this, matches.class ));
+            }
+        });
+        // ende bottomnavigation
+
+
     }
 
     private Handler handler = new Handler(new Handler.Callback() {
