@@ -38,6 +38,7 @@ public class chat extends AppCompatActivity
 
         }
     });
+    //bottom navigation
         ImageButton btnprofil = (ImageButton) findViewById(R.id.btn_profil);
         btnprofil.setOnClickListener(new View.OnClickListener() {
             @Override

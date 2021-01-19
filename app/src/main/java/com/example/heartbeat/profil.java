@@ -34,7 +34,7 @@ public class profil extends AppCompatActivity
                 startActivity(new Intent(profil.this, suchekonfig.class ));
             }
         });
-
+        //Bottomnavigation
         ImageButton btnprofil = (ImageButton) findViewById(R.id.btn_profil);
         btnprofil.setOnClickListener(new View.OnClickListener() {
             @Override
