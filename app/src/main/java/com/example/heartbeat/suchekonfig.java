@@ -6,7 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.SearchView;
+import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,10 +19,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class suchekonfig extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
+    TextView tv;
+    EditText sw;
+    Button btnSubmit;
+    SeekBar entf_bar;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.suchekonfig);
 
+
+        // Zurueck Button
         ImageView z4 = (ImageView) findViewById(R.id.zurueck);
         z4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +39,25 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
             }
 
         });
+        // Ende zurück
 
+        // Standort
+       tv = (TextView) findViewById(R.id.tw_standord);
+       sw = (EditText) findViewById(R.id.sw);
+       btnSubmit = findViewById(R.id.btnSubmit);
+       btnSubmit.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               String t = sw.getText().toString();
+               tv.setText(t);
+           }
+       });
+        // Ende Standort
+
+
+
+
+        // Dropdown menüs
         Spinner spinner = findViewById(R.id.dd_sex);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.sex, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -42,8 +71,29 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
         spinner2.setOnItemSelectedListener(this);
 
 
+        final TextView entf = (TextView)  findViewById(R.id.tw_entf);
+        int maxentf = 300;
+        entf_bar = (SeekBar) findViewById(R.id.entf_bar);
+        entf_bar.setMax(maxentf);
+        entf_bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+            entf.setText(String.valueOf(progress));
+            }
 
-    }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+
+    } // Ende onCreate--------------------------------------------------------------------------------------------
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -65,7 +115,7 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
-
+    //Ende Drodownmeüs
 
 
 
