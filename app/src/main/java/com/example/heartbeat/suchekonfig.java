@@ -70,7 +70,7 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
         spinner2.setAdapter(adapter2);
         spinner2.setOnItemSelectedListener(this);
 
-
+        //Entfernung
         final TextView entf = (TextView)  findViewById(R.id.tw_entf);
         int maxentf = 300;
         entf_bar = (SeekBar) findViewById(R.id.entf_bar);
@@ -91,10 +91,10 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
 
             }
         });
-
+        //Ende Entfernung
 
     } // Ende onCreate--------------------------------------------------------------------------------------------
-
+    //Dropdown menü 2
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
