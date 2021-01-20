@@ -1,12 +1,19 @@
 package com.example.heartbeat;
 
+import java.util.ArrayList;
+
 public class Profilklasse
 {
     private String profilname;
     private String email;
     private String passwort;
-    private String profilbild;
-    private int rock, rap, schlager, blues, elektro, techno, pop;
+    private String liebKuenstler;
+    private int gebJahr;
+    private String liebGenre;
+    private String Geschlecht;
+
+   // private String profilbild;
+    private ArrayList<String> rock, rap, schlager, blues, elektro, techno, pop;
 
     public Profilklasse (String profilname, String email, String passwort)
     {
@@ -14,39 +21,66 @@ public class Profilklasse
         this.passwort = passwort;
         this.email = email;
     }
-
-    public void BluesUp()
+//Getter und Setter
+    public String getPasswort()
     {
-        blues = blues + 1;
+        return passwort;
     }
 
-    public void elektroUp()
+    public String getProfilname()
     {
-        elektro = elektro +1;
+        return profilname;
     }
 
-    public void popUp()
+    public String getEmail()
     {
-        pop = pop +1;
+        return email;
     }
 
-    public void rockUp()
+    public void setPasswort(String passwort)
     {
-        rock = rock +1;
+        this.passwort = passwort;
     }
 
-    public void rapUp()
+    public void setProfilname(String profilname)
     {
-        rap = rap +1;
+        this.profilname = profilname;
     }
 
-    public void schlagerUp()
+    public void setEmail(String eMail)
     {
-        schlager = schlager +1;
+        this.email = email;
     }
 
-    public void technoUp()
+    public void addBlues(String song)
     {
-        techno = techno +1;
+        blues.add(song);
+    }
+
+    public void addElektro(String song)
+    {
+        elektro.add(song);
+    }
+
+    public void addPop(String song){ pop.add(song); }
+
+    public void addRock(String song)
+    {
+        rock.add(song);
+    }
+
+    public void addRap(String song)
+    {
+        rap.add(song);
+    }
+
+    public void addSchlager(String song)
+    {
+        schlager.add(song);
+    }
+
+    public void addTechno(String song)
+    {
+        techno.add(song);
     }
 }

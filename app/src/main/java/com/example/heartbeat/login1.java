@@ -20,8 +20,11 @@ public class login1 extends AppCompatActivity
                 startActivity(new Intent(login1.this, register.class));
             }
         });
-        Button registrierButton = (Button)findViewById(R.id.registrierButton);
+
+        Button registrierButton = (Button)findViewById(R.id.registrierButton2);
         registrierButton.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(login1.this, profil.class));

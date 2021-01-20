@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
+    <Spinner
+        android:id="@+id/dd_Genres2"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_et"
+        app:layout_constraintEnd_toEndOf="@+id/liebKuenstET"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/liebKuenstET"
+        app:layout_constraintTop_toBottomOf="@+id/gebJahrET" />
+
     <TextView
         android:id="@+id/slogan"
         android:layout_width="wrap_content"
@@ -42,128 +53,107 @@
         android:text="Lieblingsgenre"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/benutzername"
-        app:layout_constraintStart_toStartOf="@+id/benutzername" />
+        app:layout_constraintBottom_toTopOf="@+id/dd_Genres"
+        app:layout_constraintStart_toStartOf="@+id/dd_Genres" />
+
+    <TextView
+        android:id="@+id/lieblingskuenstler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lieblingskuenstler"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/liebKuenstET"
+        app:layout_constraintStart_toStartOf="@+id/liebKuenstET" />
 
     <EditText
-        android:id="@+id/benutzername"
+        android:id="@+id/liebKuenstET"
         android:layout_width="230dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/round_et"
         android:ems="10"
-        android:hint=" Benutzername"
+        android:hint="Lieblingskünstler"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/slogan" />
+        app:layout_constraintTop_toBottomOf="@+id/dd_Genres" />
 
     <TextView
-        android:id="@+id/alterTxt"
+        android:id="@+id/gebJahr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alter"
+        android:text="Geburtsjahr"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/registerEmail"
-        app:layout_constraintStart_toStartOf="@+id/registerEmail" />
+        app:layout_constraintBottom_toTopOf="@+id/gebJahrET"
+        app:layout_constraintStart_toStartOf="@+id/gebJahrET" />
 
     <EditText
-        android:id="@+id/registerEmail"
+        android:id="@+id/gebJahrET"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/round_et"
         android:ems="10"
-        android:textAlignment="center"
-        android:hint=" E-Mail"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/benutzername" />
-
-    <TextView
-        android:id="@+id/pwTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Passwort"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/registerPasswort"
-        app:layout_constraintStart_toStartOf="@+id/registerPasswort" />
-
-    <EditText
-        android:id="@+id/registerPasswort"
-        android:layout_width="230dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/round_et"
-        android:ems="10"
-        android:textAlignment="center"
-        android:hint=" Passwort"
+        android:hint="Geburtsjahr"
         android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/liebKuenstET" />
 
     <TextView
         android:id="@+id/pwbestTxt"
         android:layout_width="186dp"
         android:layout_height="25dp"
-        android:text=" Passwortbestätigung"
+        android:text="Sexuelle Ausrichtung"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/registerbestPasswort"
-        app:layout_constraintStart_toStartOf="@+id/registerbestPasswort" />
-
-    <EditText
-        android:id="@+id/registerbestPasswort"
-        android:layout_width="230dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/round_et"
-        android:ems="10"
-        android:textAlignment="center"
-        android:hint=" Passwort"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerPasswort" />
+        app:layout_constraintBottom_toTopOf="@+id/dd_Genres2"
+        app:layout_constraintStart_toStartOf="@+id/dd_Genres2" />
 
     <Button
-        android:id="@+id/registrierButton"
+        android:id="@+id/registrierButton2"
         android:layout_width="250dp"
         android:layout_height="90dp"
+        android:layout_marginBottom="100dp"
         android:text="Weiter"
-        android:textColor="@color/black"
 
+        android:textColor="@color/black"
         android:textSize="25sp"
         app:backgroundTint="@color/Lila"
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerbestPasswort"
-        app:layout_constraintVertical_bias="0.651" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtMeldung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text=" "
         android:textColor="#FF0000"
-        app:layout_constraintBottom_toTopOf="@+id/registrierButton"
+        app:layout_constraintBottom_toTopOf="@+id/registrierButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/dd_Genres"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_et"
+        app:layout_constraintEnd_toEndOf="@+id/liebKuenstET"
+        app:layout_constraintStart_toStartOf="@+id/liebKuenstET"
+        app:layout_constraintTop_toBottomOf="@+id/slogan" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

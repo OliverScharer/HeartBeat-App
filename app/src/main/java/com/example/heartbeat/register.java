@@ -2,6 +2,7 @@ package com.example.heartbeat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,8 +23,9 @@ public class register extends AppCompatActivity
             }
         });
 
+
         //registriervorgang
-        Button registrierButton = (Button)findViewById(R.id.registrierButton);
+        Button registrierButton = (Button)findViewById(R.id.registrierButton2);
         registrierButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,8 +34,8 @@ public class register extends AppCompatActivity
                 TextView txtMeldung = findViewById(R.id.txtMeldung);
 
                 EditText benET = findViewById(R.id.benutzername);
-                EditText mailET = findViewById(R.id.registerEmail);
-                EditText pwET = findViewById(R.id.registerPasswort);
+                EditText mailET = findViewById(R.id.liebKuenstET);
+                EditText pwET = findViewById(R.id.gebJahrET);
                 EditText pwBestET = findViewById(R.id.registerbestPasswort);
 
                 String benS = benET.getText().toString();
@@ -46,16 +48,21 @@ public class register extends AppCompatActivity
 
                 if (!benS.isEmpty() && !mailS.isEmpty() && pwKorrekt)
                 {
+                    Log.e("register", "register" );
                     Profilklasse pr = new Profilklasse(benS, mailS, pwS);
+                    ((Profilliste) getApplication()).addProfil(pr);
+                    ((Profilliste) getApplication()).setPrret(pr);
                     startActivity(new Intent(register.this, profilanlegen.class));
                 }
                 else if (!pwKorrekt)
                     txtMeldung.setText("Die beiden Passwörter stimmen nicht überein");
 
                 else
-                    txtMeldung.setText("bitte geben Sie vollständige Daten an");
+                    txtMeldung.setText("Bitte geben Sie vollständige Daten an");
             }
         });
+
+
 
     }
 }
