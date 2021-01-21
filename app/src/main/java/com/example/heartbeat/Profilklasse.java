@@ -15,6 +15,7 @@ public class Profilklasse
     private String geschlecht;
     private String lieblingsliedName;
     private String lieblingsliedKuenstler;
+    private String ausrichtung;
     private int profilbild;
 
     private ArrayList<String> rock, rap, schlager, blues, elektro, techno, pop, sonstige;

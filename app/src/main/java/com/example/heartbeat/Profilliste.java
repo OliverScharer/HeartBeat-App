@@ -77,7 +77,7 @@ public class Profilliste extends Application
         rapsongs.add("Lose Yourself - Eminem");
         rapsongs.add("Bombay Calling - OK KID");
 
-        schlagersongs.add("Athemlos - Helene Fischer");
+        schlagersongs.add("Atemlos - Helene Fischer");
         schlagersongs.add("So bist du - Peter Maffai");
 
         bluessongs.add("Slow Blues - Buddy Guy");
@@ -96,6 +96,8 @@ public class Profilliste extends Application
         // profilname, email, passwort, liebGenre, liebKuenstler, lieblingsliedName, lieblingsliedKuenstler, profilbild, genre1S,  genre1, genre2S,genre2
 
         int profilbild = R.drawable.profil;
+        int profilbildLisa = R.drawable.lisa;
+
         profilliste.add(new Profilklasse("Lars Lindgruen", "LarsLind@gmx.de", "123", "techno", "Darude", "Sandstorm", "Darude", profilbild, "techno", technosongs, "elektro", elektrosongs ));
 
         profilliste.add(new Profilklasse("Robin Joe Fränzel", "RobJoe@gmx.de", "123", "schlager", "Helene Fischer", "Atemlos", "Helene Fischer", profilbild, "schlager", schlagersongs, "blues", bluessongs ));
