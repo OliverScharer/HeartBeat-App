@@ -15,7 +15,7 @@ public class Profilklasse
     private String geschlecht;
     private String lieblingsliedName;
     private String lieblingsliedKuenstler;
-    private ImageView profilbild;
+    private int profilbild;
 
     private ArrayList<String> rock, rap, schlager, blues, elektro, techno, pop, sonstige;
 
@@ -26,7 +26,7 @@ public class Profilklasse
         this.email = email;
     }
 
-    public Profilklasse (String profilname, String email, String passwort, String liebGenre, String liebKuenstler, String lieblingsliedName, String lieblingsliedKuenstler, ImageView profilbild, String genre1S, ArrayList<String> genre1, String genre2S, ArrayList <String> genre2)
+    public Profilklasse (String profilname, String email, String passwort, String liebGenre, String liebKuenstler, String lieblingsliedName, String lieblingsliedKuenstler, int profilbild, String genre1S, ArrayList<String> genre1, String genre2S, ArrayList <String> genre2)
     {
         this.profilname = profilname;
         this.passwort = passwort;
@@ -80,7 +80,7 @@ public class Profilklasse
     public String getGeschlecht() {return geschlecht;}
     public String getLieblingsliedName () {return lieblingsliedName;}
     public String getLieblingsliedKuenstler () {return lieblingsliedKuenstler;}
-    public ImageView getProfilbild() {return profilbild;}
+    public int getProfilbild() {return profilbild;}
     public int getGebJahr() {return gebJahr;}
 
 
@@ -111,7 +111,7 @@ public class Profilklasse
     {
         this.geschlecht = geschlecht;
     }
-    public void setProfilbild(ImageView profilbild){ this.profilbild = profilbild;}
+    public void setProfilbild(int profilbild){ this.profilbild = profilbild;}
     public void setProfilname(String profilname)
     {
         this.profilname = profilname;
