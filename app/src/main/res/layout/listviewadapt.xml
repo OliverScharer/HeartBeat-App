@@ -1,0 +1,53 @@
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="16dp"
+    android:backgroundTint="@color/black">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <TextView
+         android:id="@+id/nameTxt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@id/profilbild"
+         android:layout_centerVertical="true"
+         android:text="TextView"
+         android:textSize="25dp"
+         android:fontFamily="@font/limelight"
+         android:textColor="@color/tuerkis" />
+
+     <TextView
+         android:id="@+id/matchabilityTxt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@id/herz"
+         android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+         android:text="TextView"
+         android:textColor="@color/tuerkis" />
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/profilbild"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profil"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+     <ImageView
+         android:id="@+id/herz"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="15dp"
+         app:srcCompat="@drawable/heart_blue" />
+ </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
