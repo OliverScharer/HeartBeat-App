@@ -9,6 +9,7 @@ public class Profilliste extends Application
 {
     private ArrayList<Profilklasse> profilliste;
     private Profilklasse prret;
+    private int angemeldetID;
     public Profilliste ()
     {
         profilliste = new ArrayList<Profilklasse>();
@@ -24,11 +25,12 @@ public class Profilliste extends Application
     {
 
         boolean gefunden = false;
-        for(Profilklasse pr : profilliste)
+        for(int i = 0; i< profilliste.size(); i++)
         {
-            if (pr.getPasswort().contentEquals(passwort) && pr.getProfilname().contentEquals(profilname) || pr.getEmail().contentEquals(eMail)) {
-                prret = pr;
+            if (profilliste.get(i).getPasswort().contentEquals(passwort) && (profilliste.get(i).getProfilname().contentEquals(profilname) || profilliste.get(i).getEmail().contentEquals(eMail))) {
+                prret = profilliste.get(i);
                 gefunden = true;
+                angemeldetID = i;
                 break;
             }
 
@@ -42,6 +44,8 @@ public class Profilliste extends Application
     }
 
     public Profilklasse getPrret() { return prret; }
+
+    public int getAngemeldetID() {return angemeldetID;}
 
     public void setPrret(Profilklasse p)
     {

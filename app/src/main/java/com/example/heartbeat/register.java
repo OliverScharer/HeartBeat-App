@@ -48,7 +48,6 @@ public class register extends AppCompatActivity
 
                 if (!benS.isEmpty() && !mailS.isEmpty() && pwKorrekt)
                 {
-                    Log.e("register", "register" );
                     Profilklasse pr = new Profilklasse(benS, mailS, pwS);
                     ((Profilliste) getApplication()).addProfil(pr);
                     ((Profilliste) getApplication()).setPrret(pr);
