@@ -7,7 +7,7 @@
     android:background="@color/black">
 
     <Spinner
-        android:id="@+id/dd_Genres2"
+        android:id="@+id/dd_sexAusricht"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
@@ -66,6 +66,16 @@
         app:layout_constraintBottom_toTopOf="@+id/liebKuenstET"
         app:layout_constraintStart_toStartOf="@+id/liebKuenstET" />
 
+    <TextView
+        android:id="@+id/lieblingsLied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lieblingslied"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/liebLiedET2"
+        app:layout_constraintStart_toStartOf="@+id/liebLiedET2" />
+
     <EditText
         android:id="@+id/liebKuenstET"
         android:layout_width="230dp"
@@ -81,6 +91,38 @@
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dd_Genres" />
+
+    <EditText
+        android:id="@+id/liebLiedET2"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/round_et"
+        android:ems="10"
+        android:hint="Lieblingslied"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liebKuenstET" />
+
+    <EditText
+        android:id="@+id/liebLiedIntET3"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_et"
+        android:ems="10"
+        android:hint="Interpret"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liebLiedET2" />
 
     <TextView
         android:id="@+id/gebJahr"
@@ -104,19 +146,19 @@
         android:inputType="textPassword"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/liebKuenstET" />
+        app:layout_constraintTop_toBottomOf="@+id/liebLiedIntET3" />
 
     <TextView
         android:id="@+id/pwbestTxt"
         android:layout_width="186dp"
         android:layout_height="25dp"
-        android:text="Sexuelle Ausrichtung"
+        android:text="Auf der Suche nach:"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/dd_Genres2"
-        app:layout_constraintStart_toStartOf="@+id/dd_Genres2" />
+        app:layout_constraintBottom_toTopOf="@+id/dd_sexAusricht"
+        app:layout_constraintStart_toStartOf="@+id/dd_sexAusricht" />
 
     <Button
         android:id="@+id/registrierButton2"
