@@ -26,7 +26,7 @@ public class profilanlegen extends AppCompatActivity implements AdapterView.OnIt
         genresSp.setOnItemSelectedListener(this);
 
 
-        Button registrierButton2 = (Button)findViewById(R.id.registrierButton2);
+        Button registrierButton2 = (Button)findViewById(R.id.bearbEndBtn2);
         registrierButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

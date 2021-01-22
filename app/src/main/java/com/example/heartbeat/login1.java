@@ -22,7 +22,7 @@ public class login1 extends AppCompatActivity
             }
         });
 
-        Button registrierButton = (Button)findViewById(R.id.registrierButton2);
+        Button registrierButton = (Button)findViewById(R.id.bearbEndBtn2);
         registrierButton.setOnClickListener(new View.OnClickListener() {
 
             TextView txtMeldung2 = findViewById(R.id.txtMeldung2);

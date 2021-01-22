@@ -52,14 +52,13 @@
                 android:id="@+id/matchBtn1"
                 android:layout_width="185dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="40dp"
                 android:layout_marginLeft="20dp"
-                android:text="Weiter"
+                android:layout_marginTop="40dp"
+                android:text="Match finden"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 app:backgroundTint="@color/Lila"
-                app:cornerRadius="40dp"
-                />
+                app:cornerRadius="40dp" />
 
             <TextView
                 android:id="@+id/textView"
@@ -71,11 +70,11 @@
                 android:textColor="#FFFFFF" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/sucheBtn"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginLeft="-130dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="50dp"
                 android:layout_weight="0"
                 android:clickable="true"
                 app:srcCompat="@drawable/lupe" />

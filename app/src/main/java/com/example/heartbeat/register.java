@@ -3,7 +3,6 @@ package com.example.heartbeat;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -36,7 +35,7 @@ public class register extends AppCompatActivity implements AdapterView.OnItemSel
         });
 
         //registriervorgang
-        Button registrierButton = (Button)findViewById(R.id.registrierButton2);
+        Button registrierButton = (Button)findViewById(R.id.bearbEndBtn2);
         registrierButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
