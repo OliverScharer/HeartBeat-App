@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class chat_uebersicht extends AppCompatActivity
 
-{
+{   // ListView
     private RecyclerView cRecyclerView;
     private RecyclerView.Adapter cAdapter;
     private RecyclerView.LayoutManager cLayoutManager;
@@ -24,7 +24,7 @@ public class chat_uebersicht extends AppCompatActivity
         setContentView(R.layout.chat_uebersicht);
 
         ArrayList<ChatItem> chatlist = new ArrayList<>();
-        chatlist.add(new ChatItem( R.drawable.oli1, "Oliver Scharer", R.drawable.heart));
+        chatlist.add(new ChatItem( R.drawable.oli1, "Oliver Scharer", R.drawable.heart_blue));
         chatlist.add(new ChatItem( R.drawable.lisa, "Lisa Langeweile", R.drawable.heart_blue));
         chatlist.add(new ChatItem( R.drawable.solli, "Solveig Nakladal", R.drawable.heart_blue));
         chatlist.add(new ChatItem( R.drawable.profil, "Ulrike Meinhof", R.drawable.heart));
@@ -49,6 +49,34 @@ public class chat_uebersicht extends AppCompatActivity
 
         cRecyclerView.setLayoutManager(cLayoutManager);
         cRecyclerView.setAdapter(cAdapter);
+        //ListView Ende
+
+        //Bottomnavigation
+        ImageButton btnprofil = (ImageButton) findViewById(R.id.btn_profil);
+        btnprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(chat_uebersicht.this, profil.class ));
+            }
+        });
+
+        ImageButton btnmusic = (ImageButton) findViewById(R.id.btn_music);
+        btnmusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(chat_uebersicht.this, musicplayer.class ));
+            }
+        });
+        ImageButton btnmatch = (ImageButton) findViewById(R.id.btn_matches);
+        btnmatch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(chat_uebersicht.this, matches.class ));
+            }
+        });
     }
 
 
