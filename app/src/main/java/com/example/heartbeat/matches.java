@@ -25,7 +25,7 @@ public class matches extends AppCompatActivity
         ArrayList<MatchItem> matchliste = new ArrayList<>();
 
         matchliste.add(new MatchItem(R.drawable.oli1,"Oliver Scharer", "62%", R.drawable.heart_red));
-        matchliste.add(new MatchItem(R.drawable.lisa,"Lisa Langwaldt","46%", R.drawable.heart_red));
+        matchliste.add(new MatchItem(R.drawable.lisa,"Lisa Langwaldt","76%", R.drawable.heart_red));
         matchliste.add(new MatchItem(R.drawable.br,"Brigitte Mohnhaupt","46%", R.drawable.heart_blue));
         matchliste.add(new MatchItem(R.drawable.ensslin,"Gudrun Ensslin","34%", R.drawable.heart_blue));
         matchliste.add(new MatchItem(R.drawable.henning,"Henning May","21%", R.drawable.heart));
