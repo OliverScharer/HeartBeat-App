@@ -96,7 +96,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:ems="10"
-                android:text="profilname"
+                android:text="Simon Hees"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
@@ -149,7 +149,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tv_roundlila"
+                android:text="Rock"
+                android:textColor="@color/Lila"
+                android:textSize="24sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
