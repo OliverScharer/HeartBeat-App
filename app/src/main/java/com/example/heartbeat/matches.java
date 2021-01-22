@@ -43,7 +43,7 @@ public class matches extends AppCompatActivity
         adapter.setOnItemClickListener(new listviewadapt.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                startActivity(new Intent(matches.this, chat.class));
+                startActivity(new Intent(matches.this, profil_fremd.class));
             }
         });
 

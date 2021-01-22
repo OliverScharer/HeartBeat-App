@@ -54,6 +54,8 @@
         </activity>
         <activity android:name="com.example.heartbeat.chat_uebersicht" >
         </activity>
+        <activity android:name="com.example.heartbeat.profil_fremd" >
+        </activity>
 
 
 
