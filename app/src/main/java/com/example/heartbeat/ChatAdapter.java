@@ -64,7 +64,8 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ChatViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ChatViewHolder holder, int position)
+    {
     ChatItem currentItem = mChatlist.get(position);
     holder.mImageView.setImageResource(currentItem.getImageResource());
     holder.mText1.setText(currentItem.getText1());

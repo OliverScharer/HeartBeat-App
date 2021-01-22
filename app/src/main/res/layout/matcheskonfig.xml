@@ -14,6 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/black"
             android:orientation="horizontal">
 
@@ -31,7 +32,7 @@
                 android:id="@+id/ivlogo"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/logo2" />
@@ -40,8 +41,8 @@
                 android:id="@+id/oben"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginRight="80dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/limelight"
@@ -62,8 +63,8 @@
                 android:id="@+id/profile_image"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
                 android:src="@drawable/solli"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp" />
@@ -72,14 +73,16 @@
                 android:id="@+id/profilname"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Solveig Nakladal"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                tools:ignore="RtlCompat" />
 
 
         </LinearLayout>

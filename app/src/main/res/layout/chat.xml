@@ -15,6 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/black"
             android:orientation="horizontal">
 
@@ -32,7 +33,7 @@
                 android:id="@+id/ivlogo"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/logo2" />
@@ -41,8 +42,8 @@
                 android:id="@+id/oben"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginRight="80dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/limelight"
@@ -106,21 +107,25 @@
                 android:text="Guten Morgen! Wie geht es dir?"
                 android:textAlignment="center"
                 android:textColor="@color/white"
+
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
-                android:layout_marginLeft="95dp"
+                android:layout_marginLeft="90dp"
                 android:layout_marginTop="20dp"
+
                 android:layout_marginRight="5dp"
                 android:background="@drawable/textblasegrau"
                 android:gravity="center"
+                android:paddingLeft="10dp"
                 android:text="Morgen. Mir geht es ganz gut soweit bin nur ein wenig im Prüfungsstress."
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -174,13 +179,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
             android:layout_marginBottom="15dp"
             android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/et_chat"
                 android:layout_width="wrap_content"
-                android:paddingLeft="10dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
@@ -189,12 +194,15 @@
                 android:background="@drawable/round_et"
                 android:ems="10"
                 android:hint="Nachricht schreiben..."
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
 
             <ImageView
                 android:id="@+id/senden"
                 android:layout_width="40dp"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/senden" />
@@ -203,52 +211,47 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/border_layout"
             android:orientation="horizontal">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/btn_chat"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/chat_blue" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/btn_matches"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/heart" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/btn_music"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/music" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/btn_profil"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/profil" />
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="vertical"></LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,7 +35,7 @@ public class profil extends AppCompatActivity
             }
         });
         //Bottomnavigation
-        ImageButton btnprofil = (ImageButton) findViewById(R.id.btn_profil);
+        ImageView btnprofil = (ImageView) findViewById(R.id.btn_profil);
         btnprofil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -43,7 +43,7 @@ public class profil extends AppCompatActivity
                 startActivity(new Intent(profil.this, profil.class ));
             }
         });
-        ImageButton btnchat = (ImageButton) findViewById(R.id.btn_chat);
+        ImageView btnchat = (ImageView) findViewById(R.id.btn_chat);
         btnchat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -51,7 +51,7 @@ public class profil extends AppCompatActivity
                 startActivity(new Intent(profil.this, chat_uebersicht.class ));
             }
         });
-        ImageButton btnmusic = (ImageButton) findViewById(R.id.btn_music);
+        ImageView btnmusic = (ImageView) findViewById(R.id.btn_music);
         btnmusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -59,7 +59,7 @@ public class profil extends AppCompatActivity
                 startActivity(new Intent(profil.this, musicplayer.class ));
             }
         });
-        ImageButton btnmatch = (ImageButton) findViewById(R.id.btn_matches);
+        ImageView btnmatch = (ImageView) findViewById(R.id.btn_matches);
         btnmatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)

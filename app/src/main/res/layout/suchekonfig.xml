@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/black"
             android:orientation="horizontal">
 
@@ -33,7 +33,7 @@
                 android:id="@+id/ivlogo"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/logo2" />
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginRight="80dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/limelight"
@@ -117,9 +117,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="130dp"
                     android:layout_marginTop="30dp"
+                    android:layout_marginRight="40dp"
                     android:layout_marginBottom="30dp"
                     android:layout_weight="1"
-                    android:textAlignment="textEnd"                  android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="textEnd"
                     android:textColor="@color/graublau"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -197,7 +199,7 @@
 
                 <TextView
                     android:id="@+id/et_anzeigen"
-                    android:layout_width="50dp"
+                    android:layout_width="20dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="30dp"
@@ -211,7 +213,7 @@
                 <Spinner
                     android:id="@+id/dd_sex"
                     style="@style/SpinnerTheme"
-                    android:layout_width="50dp"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="30dp"

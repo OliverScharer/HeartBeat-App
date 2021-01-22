@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -59,7 +60,7 @@ public class chat_uebersicht extends AppCompatActivity
         //ListView Ende
 
         //Bottomnavigation
-        ImageButton btnprofil = (ImageButton) findViewById(R.id.btn_profil);
+        ImageView btnprofil = (ImageView) findViewById(R.id.btn_profil);
         btnprofil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -68,7 +69,7 @@ public class chat_uebersicht extends AppCompatActivity
             }
         });
 
-        ImageButton btnmusic = (ImageButton) findViewById(R.id.btn_music);
+        ImageView btnmusic = (ImageView) findViewById(R.id.btn_music);
         btnmusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -76,7 +77,7 @@ public class chat_uebersicht extends AppCompatActivity
                 startActivity(new Intent(chat_uebersicht.this, musicplayer.class ));
             }
         });
-        ImageButton btnmatch = (ImageButton) findViewById(R.id.btn_matches);
+        ImageView btnmatch = (ImageView) findViewById(R.id.btn_matches);
         btnmatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)

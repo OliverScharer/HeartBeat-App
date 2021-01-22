@@ -66,7 +66,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="340dp"
+            android:layout_height="390dp"
             android:background="@drawable/border_layout"
             android:orientation="vertical">
 
@@ -75,8 +75,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
                 android:text="Vorschläge"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -84,9 +84,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/matchview"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
             </androidx.recyclerview.widget.RecyclerView>
@@ -94,42 +93,42 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/border_layout"
             android:orientation="horizontal">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/btn_chat"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/chat" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/btn_matches"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/heart_blue" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/btn_music"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/music" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/btn_profil"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/black"
                 app:srcCompat="@drawable/profil" />
