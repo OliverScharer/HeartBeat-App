@@ -26,10 +26,11 @@ public class matches extends AppCompatActivity
 
         matchliste.add(new MatchItem(R.drawable.oli1,"Oliver Scharer", "62%", R.drawable.heart_red));
         matchliste.add(new MatchItem(R.drawable.lisa,"Lisa Langwaldt","46%", R.drawable.heart_red));
-        //matchliste.add(new MatchItem{"Solveig Nakladal","700094", "62%"});
-        //matchliste.add(new MatchItem{"Jens Jenssen","700089", "62%"});
-        //matchliste.add(new MatchItem{"Jason Momoa","700124", "62%"});
-        //matchliste.add(new MatchItem{"Jenniffer Lawrence","700124", "62%"});
+        matchliste.add(new MatchItem(R.drawable.br,"Brigitte Mohnhaupt","46%", R.drawable.heart_blue));
+        matchliste.add(new MatchItem(R.drawable.ensslin,"Gudrun Ensslin","34%", R.drawable.heart_blue));
+        matchliste.add(new MatchItem(R.drawable.henning,"Henning May","21%", R.drawable.heart));
+        matchliste.add(new MatchItem(R.drawable.jens,"Jens Jensen","13%", R.drawable.heart));
+
 
 
         matchview = findViewById(R.id.matchview);
