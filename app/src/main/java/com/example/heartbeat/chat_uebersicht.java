@@ -15,7 +15,7 @@ public class chat_uebersicht extends AppCompatActivity
 
 {   // ListView
     private RecyclerView cRecyclerView;
-    private RecyclerView.Adapter cAdapter;
+    private ChatAdapter cAdapter;
     private RecyclerView.LayoutManager cLayoutManager;
 
     @Override
@@ -39,6 +39,7 @@ public class chat_uebersicht extends AppCompatActivity
         chatlist.add(new ChatItem( R.drawable.profil, "Paul wichtig", R.drawable.heart));
 
 
+
         //Part 2
 
         cRecyclerView = findViewById(R.id.recycler);
@@ -49,6 +50,12 @@ public class chat_uebersicht extends AppCompatActivity
 
         cRecyclerView.setLayoutManager(cLayoutManager);
         cRecyclerView.setAdapter(cAdapter);
+        cAdapter.setOnItemClickListener(new ChatAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                startActivity(new Intent(chat_uebersicht.this, chat.class));
+            }
+        });
         //ListView Ende
 
         //Bottomnavigation
