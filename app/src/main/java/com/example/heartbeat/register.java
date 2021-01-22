@@ -59,10 +59,6 @@ public class register extends AppCompatActivity implements AdapterView.OnItemSel
 
                 if (!benS.isEmpty() && !mailS.isEmpty() && pwKorrekt)
                 {
-                    Profilklasse pr = new Profilklasse(benS, mailS, pwS);
-                    Profilliste pro = (Profilliste) getApplication();
-                    pro.addProfil(pr);
-                    pro.setPrret(pr);
                     startActivity(new Intent(register.this, profilanlegen.class));
                 }
                 else if (!pwKorrekt)

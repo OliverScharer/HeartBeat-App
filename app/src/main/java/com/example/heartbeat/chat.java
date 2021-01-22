@@ -1,20 +1,13 @@
 package com.example.heartbeat;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
 
 public class chat extends AppCompatActivity
 {
@@ -27,7 +20,7 @@ public class chat extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat);
 
-        tw = (TextView) findViewById(R.id.textView);
+        tw = (TextView) findViewById(R.id.matchBtn);
         et = (EditText) findViewById(R.id.et_chat);
         senden = (ImageView) findViewById(R.id.senden);
         senden.setOnClickListener(new View.OnClickListener() {

@@ -1,63 +1,27 @@
 package com.example.heartbeat;
 
 import android.app.Application;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 
-public class Profilliste extends Application
+public class Profilliste extends AppCompatActivity
 {
+
     private ArrayList<Profilklasse> profilliste;
+    private ArrayList<String[]> matchliste;
     private Profilklasse prret;
-    private int angemeldetID;
-    public Profilliste ()
-    {
-        profilliste = new ArrayList<Profilklasse>();
-    }
-
-    public ArrayList<Profilklasse> getProfilliste()
-    {
-        return profilliste;
-    }
 
 
-    public boolean getProfil(String passwort, String profilname, String eMail)
-    {
-
-        boolean gefunden = false;
-        for(int i = 0; i< profilliste.size(); i++)
-        {
-            if (profilliste.get(i).getPasswort().contentEquals("o")) {// && (profilliste.get(i).getProfilname().contentEquals(profilname) || profilliste.get(i).getEmail().contentEquals(eMail))) {
-                prret = profilliste.get(i);
-                gefunden = true;
-                angemeldetID = i;
-                break;
-            }
-
-        }
-        return gefunden;
-    }
-
-    public void addProfil(Profilklasse profil)
-    {
-        profilliste.add(profil);
-    }
-
-    public Profilklasse getPrret() { return prret; }
-
-    public int getAngemeldetID() {return angemeldetID;}
-
-    public void setPrret(Profilklasse p)
-    {
-        this.prret = p;
-    }
-
-
-    public ArrayList<Profilklasse> ladeStandardProfile()
-    {
-        ArrayList<Profilklasse> profilliste =new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.matches);
 
         ArrayList<String> rocksongs = new ArrayList<String>();
         ArrayList<String> popsongs = new ArrayList<String>();
@@ -97,8 +61,10 @@ public class Profilliste extends Application
         //Konstruktor mit den Angaben:
         // profilname, email, passwort, liebGenre, liebKuenstler, lieblingsliedName, lieblingsliedKuenstler, profilbild, genre1S,  genre1, genre2S,genre2
 
-        int profilbild = R.drawable.profil;
+        int profilbild = R.drawable.profilbild;
         int profilbildLisa = R.drawable.lisa;
+        int profilbildOli = R.drawable.oli1;
+
 
         profilliste.add(new Profilklasse("Lars Lindgruen", "LarsLind@gmx.de", "123", "techno", "Darude", "Sandstorm", "Darude", profilbild, "techno", technosongs, "elektro", elektrosongs ));
 
@@ -106,10 +72,23 @@ public class Profilliste extends Application
 
         profilliste.add(new Profilklasse("Daniel Duemmel", "DADÜ@gmx.de", "123", "pop", "Ariana Grande", "Bad Guy", "Billie Eilish", profilbild, "pop", popsongs, "rap", rapsongs ));
 
-        profilliste.add(new Profilklasse("o", "Oliver.Scharer@web.de", "1", "rock", "Eskimo Callboy", "Crystals", "Eskimo Callboy",profilbild, "rock", rocksongs, "pop", popsongs ));
+        profilliste.add(new Profilklasse("Oliver Scharer", "Oliver.Scharer@web.de", "1", "rock", "Eskimo Callboy", "Crystals", "Eskimo Callboy",profilbildOli, "rock", rocksongs, "pop", popsongs ));
 
-        return profilliste;
+        matchliste = new ArrayList<>();
+
+        matchliste.add(new String[]{"Oliver Scharer","700124", "62%"});
+        matchliste.add(new String[]{"Lisa Langwaldt","700131", "46%"});
+        matchliste.add(new String[]{"Solveig Nakladal","700094", "62%"});
+        matchliste.add(new String[]{"Jens Jenssen","700089", "62%"});
+        matchliste.add(new String[]{"Jason Momoa","700124", "62%"});
+        matchliste.add(new String[]{"Jenniffer Lawrence","700124", "62%"});
     }
+
+    public ArrayList<String[]> getProfile()
+    {
+        return matchliste;
+    }
+
 
 
 

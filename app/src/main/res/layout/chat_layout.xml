@@ -18,7 +18,7 @@
             android:src="@drawable/profil" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/matchBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"

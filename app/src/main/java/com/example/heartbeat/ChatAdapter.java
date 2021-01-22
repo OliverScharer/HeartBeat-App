@@ -33,7 +33,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         public ChatViewHolder(View itemView, final OnItemClickListener listener){
             super(itemView);
             mImageView = itemView.findViewById(R.id. imageView);
-            mText1 = itemView.findViewById(R.id.textView);
+            mText1 = itemView.findViewById(R.id.matchBtn);
             mImageView2 = itemView.findViewById(R.id.imageView2);
 
             itemView.setOnClickListener(new View.OnClickListener() {

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,21 +48,46 @@
             android:background="@drawable/border_layout"
             android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/matchBtn1"
+                android:layout_width="185dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="Weiter"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:backgroundTint="@color/Lila"
+                app:cornerRadius="40dp"
+                />
+
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:text="Sucheinstellungen"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="-130dp"
                 android:layout_marginTop="60dp"
-                android:layout_marginRight="0dp"
-                android:layout_marginBottom="60dp"
                 android:layout_weight="0"
-                android:background="@drawable/round_lila"
                 android:clickable="true"
-                android:gravity="center"
-                android:text="Match suchen"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
+                app:srcCompat="@drawable/lupe" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="36dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="80dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/stift" />
         </LinearLayout>
 
         <LinearLayout

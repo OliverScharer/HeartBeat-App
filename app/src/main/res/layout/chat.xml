@@ -161,7 +161,7 @@
             android:layout_height="90dp"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/matchBtn"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:layout_centerVertical="true"

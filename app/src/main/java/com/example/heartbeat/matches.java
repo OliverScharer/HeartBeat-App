@@ -3,6 +3,7 @@ package com.example.heartbeat;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -21,6 +22,14 @@ public class matches extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.matches);
 
+        ArrayList<String[]> matchliste = new ArrayList<>();
+
+        matchliste.add(new String[]{"Oliver Scharer","700124", "62%"});
+        matchliste.add(new String[]{"Lisa Langwaldt","700131", "46%"});
+        matchliste.add(new String[]{"Solveig Nakladal","700094", "62%"});
+        matchliste.add(new String[]{"Jens Jenssen","700089", "62%"});
+        matchliste.add(new String[]{"Jason Momoa","700124", "62%"});
+        matchliste.add(new String[]{"Jenniffer Lawrence","700124", "62%"});
 
         //Bottomnavigation
         ImageView btnprofil = (ImageView) findViewById(R.id.btn_profil);
@@ -48,13 +57,23 @@ public class matches extends AppCompatActivity
             }
         });
 
+        Button matchBtn1 = (Button)findViewById(R.id.matchBtn1);
+        matchBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getMatchlist(matchliste);
+            }
+        });
+
+
+
         //Bottomnavigation ende
         //matchliste übergeben
         //getMatchlist();
     }
 
     //füllt ListView mit einträgen, indem in Adapter übergeben wird
-    public void getMatchlist(ArrayList<Profilklasse> matchlist){
+    public void getMatchlist(ArrayList<String[]> matchlist){
         matchview = findViewById(R.id.matchview);
         layoutmanager = new LinearLayoutManager(this);
         matchview.setLayoutManager(layoutmanager);

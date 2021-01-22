@@ -14,9 +14,9 @@ import java.util.ArrayList;
 
 //Adapter, der die ListView generiert und mit den Daten aus matches über ViewHolder und matches verbindet, befüllt die Cardview(listviewadapt)
 public class listviewadapt extends RecyclerView.Adapter<listviewadapt.ViewHolder>{
-    private ArrayList<Profilklasse> matchliste;
+    private ArrayList<String[]>matchliste;
 private OnItemClickListener listener;
-public listviewadapt (ArrayList<Profilklasse> matchliste) //Konstruktor, der adapter mit übergebenen Daten baut
+public listviewadapt (ArrayList<String[]> matchliste) //Konstruktor, der adapter mit übergebenen Daten baut
 {
     this.matchliste = matchliste;
 }
@@ -36,7 +36,9 @@ public void setOnItemClickListener(OnItemClickListener listener) { //Setmethode 
 
     @Override
     public void onBindViewHolder(@NonNull listviewadapt.ViewHolder holder, int position) {                              //Zeigt dann die tatsächlichen Items an, "befüllt" die Liste
-holder.profilName.setText(matchliste.get(position).getProfilname());
+        holder.profilName.setText(matchliste.get(position)[0]);
+        holder.profilbild.setImageResource(Integer.parseInt(matchliste.get(position)[1]));
+        holder.matchability.setText(matchliste.get(position)[2]);
     }
 
     @Override                                                                                                           //Ist halt drin
@@ -59,7 +61,7 @@ holder.profilName.setText(matchliste.get(position).getProfilname());
             herz.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                   // rosa herz einfügen herz.setImageDrawable();
+                   herz.setImageResource(R.drawable.heart_red);
                 }
             });
             itemView.setOnClickListener(new View.OnClickListener() {
