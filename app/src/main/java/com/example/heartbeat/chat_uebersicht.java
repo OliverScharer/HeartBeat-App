@@ -24,11 +24,11 @@ public class chat_uebersicht extends AppCompatActivity
         setContentView(R.layout.chat_uebersicht);
 
         ArrayList<ChatItem> chatlist = new ArrayList<>();
-        chatlist.add(new ChatItem( R.drawable.oli1, "Oliver Scharer", R.drawable.heart_blue));
-        chatlist.add(new ChatItem( R.drawable.lisa, "Lisa Langeweile", R.drawable.heart_blue));
-        chatlist.add(new ChatItem( R.drawable.solli, "Solveig Nakladal", R.drawable.heart_blue));
+        chatlist.add(new ChatItem( R.drawable.oli1, "Oliver Scharer", R.drawable.heart_red));
+        chatlist.add(new ChatItem( R.drawable.lisa, "Lisa Langeweile", R.drawable.heart_red));
+        chatlist.add(new ChatItem( R.drawable.solli, "Solveig Nakladal", R.drawable.heart_red));
         chatlist.add(new ChatItem( R.drawable.profil, "Ulrike Meinhof", R.drawable.heart));
-        chatlist.add(new ChatItem( R.drawable.sick, "Simon Hees", R.drawable.heart_blue));
+        chatlist.add(new ChatItem( R.drawable.sick, "Simon Hees", R.drawable.heart_red));
         chatlist.add(new ChatItem( R.drawable.profil, "Horst Ludwig Meyer", R.drawable.heart));
         chatlist.add(new ChatItem( R.drawable.profil, "Brigitte Mohnhaupt", R.drawable.heart));
         chatlist.add(new ChatItem( R.drawable.profil, "Andreas Baader", R.drawable.heart));

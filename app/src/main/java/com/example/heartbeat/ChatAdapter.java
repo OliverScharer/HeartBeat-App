@@ -14,33 +14,52 @@ import java.util.ArrayList;
 public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder>{
 
     private ArrayList<ChatItem> mChatlist;
+    private ChatAdapter.OnItemClickListener mListener;
+
+    public interface OnItemClickListener {
+        void onItemClick(int position);
+    }
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
+
     public static class ChatViewHolder extends RecyclerView.ViewHolder{
 
         public ImageView mImageView;
         public TextView mText1;
-
         public ImageView mImageView2;
 
 
-        public ChatViewHolder(@NonNull View itemView) {
+        public ChatViewHolder(View itemView, final OnItemClickListener listener){
             super(itemView);
             mImageView = itemView.findViewById(R.id. imageView);
             mText1 = itemView.findViewById(R.id.textView);
             mImageView2 = itemView.findViewById(R.id.imageView2);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (listener != null) {
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onItemClick(position);
+                        }
+                    }
+                }
+            });
 
         }
+
     }
     public ChatAdapter (ArrayList<ChatItem> chatlist)
     {
         mChatlist = chatlist;
     }
 
-    @NonNull
     @Override
-    public ChatViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.chat_layout,parent, false);
-        ChatViewHolder e = new ChatViewHolder(v);
+    public ChatViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.chat_layout, parent, false);
+        ChatViewHolder e = new ChatViewHolder(v, mListener);
         return e;
     }
 
