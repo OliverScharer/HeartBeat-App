@@ -30,15 +30,14 @@
          android:text="TextView"
          android:textColor="@color/tuerkis" />
 
-     <de.hdodenhof.circleimageview.CircleImageView
+     <ImageView
          android:id="@+id/profilbild"
         android:layout_marginLeft="10dp"
         android:layout_marginVertical="10dp"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/profil"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp" />
+         />
 
      <ImageView
          android:id="@+id/herz"
