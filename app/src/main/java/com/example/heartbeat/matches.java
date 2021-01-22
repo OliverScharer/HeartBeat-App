@@ -25,11 +25,8 @@ public class matches extends AppCompatActivity
         ArrayList<MatchItem> matchliste = new ArrayList<>();
 
         matchliste.add(new MatchItem(R.drawable.oli1,"Oliver Scharer", "62%", R.drawable.heart_red));
-        matchliste.add(new MatchItem(R.drawable.lisa,"Lisa Langwaldt","46%", R.drawable.heart_red));
-        //matchliste.add(new MatchItem{"Solveig Nakladal","700094", "62%"});
-        //matchliste.add(new MatchItem{"Jens Jenssen","700089", "62%"});
-        //matchliste.add(new MatchItem{"Jason Momoa","700124", "62%"});
-        //matchliste.add(new MatchItem{"Jenniffer Lawrence","700124", "62%"});
+        matchliste.add(new MatchItem(R.drawable.lisa,"Lisa Langwaldt","46%", R.drawable.heart));
+
 
 
         matchview = findViewById(R.id.matchview);
@@ -46,6 +43,15 @@ public class matches extends AppCompatActivity
                 startActivity(new Intent(matches.this, profil_fremd.class));
             }
         });
+
+        ImageView btnSuche = (ImageView)findViewById(R.id.sucheBtn);
+        btnSuche.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(matches.this, suchekonfig.class));
+            }
+        });
+
 
         //Bottomnavigation
         ImageView btnprofil = (ImageView) findViewById(R.id.btn_profil);
@@ -75,23 +81,6 @@ public class matches extends AppCompatActivity
         //Bottomnavigation ende
         Button matchBtn1 = (Button)findViewById(R.id.matchBtn1);
 
-
-
-        //matchliste übergeben
-        //getMatchlist();
     }
 
-    //füllt ListView mit einträgen, indem in Adapter übergeben wird
-    //public void getMatchlist(ArrayList<String[]> matchlist){
-      //  matchview = findViewById(R.id.matchview);
-        //layoutmanager = new LinearLayoutManager(this);
-        //matchview.setLayoutManager(layoutmanager);
-        //adapter = new listviewadapt(matchlist);
-        //adapter.setOnItemClickListener(new listviewadapt.OnItemClickListener() {
-          //  @Override
-           // public void OnItemClick(int position) {
-                //CLick auf gesamte cardview
-          //  }
-       // });
-   // }
 }
