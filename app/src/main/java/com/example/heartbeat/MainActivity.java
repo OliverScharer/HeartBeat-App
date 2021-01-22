@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Profilliste p = new Profilliste();
-
                 startActivity(new Intent(MainActivity.this, login.class));
             }
 
