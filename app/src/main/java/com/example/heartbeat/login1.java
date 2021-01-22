@@ -28,7 +28,7 @@ public class login1 extends AppCompatActivity
 
             @Override
             public void onClick(View v) {
-                if(((Profilliste) getApplication()).getProfil(findViewById(R.id.loginPasswort).toString(), findViewById(R.id.loginEmail).toString(),findViewById(R.id.loginEmail).toString()))
+                if( ((Profilliste) getApplication()).getProfil(findViewById(R.id.loginPasswort).toString(), findViewById(R.id.loginEmail).toString(),findViewById(R.id.loginEmail).toString()))
                     startActivity(new Intent(login1.this, profil.class));
                 else
                     txtMeldung2.setText("Die Anmeldedaten sind nicht korrekt.");

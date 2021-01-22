@@ -67,7 +67,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/round_et_search"
-                android:textAlignment="center">
+                android:paddingLeft="10dp" >
 
             </EditText>
 
@@ -111,15 +111,14 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/tw_standord"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tw_standort"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="110dp"
+                    android:layout_marginLeft="130dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="30dp"
                     android:layout_weight="1"
-                    android:fontFamily="sans-serif"
-                    android:hint="mein aktueller Standort"
+                    android:textAlignment="textEnd"                  android:fontFamily="sans-serif"
                     android:textColor="@color/graublau"
                     android:textSize="18sp" />
             </LinearLayout>

@@ -36,7 +36,7 @@ public class matches extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                startActivity(new Intent(matches.this, chat.class ));
+                startActivity(new Intent(matches.this, chat_uebersicht.class ));
             }
         });
         ImageButton btnmusic = (ImageButton) findViewById(R.id.btn_music);

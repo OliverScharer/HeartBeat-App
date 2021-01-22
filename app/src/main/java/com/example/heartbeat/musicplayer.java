@@ -122,7 +122,7 @@ public class musicplayer extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                startActivity(new Intent(musicplayer.this, chat.class ));
+                startActivity(new Intent(musicplayer.this, chat_uebersicht.class ));
             }
         });
         ImageButton btnmusic = (ImageButton) findViewById(R.id.btn_music);

@@ -42,7 +42,7 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
         // Ende zurück
 
         // Standort
-       tv = (TextView) findViewById(R.id.tw_standord);
+       tv = (TextView) findViewById(R.id.tw_standort);
        sw = (EditText) findViewById(R.id.sw);
        btnSubmit = findViewById(R.id.btnSubmit);
        btnSubmit.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +54,12 @@ public class suchekonfig extends AppCompatActivity implements AdapterView.OnItem
        });
         // Ende Standort
 
+        sw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sw.setText(" ");
+            }
+        });
 
 
 

@@ -48,7 +48,7 @@ public class profil extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                startActivity(new Intent(profil.this, chat.class ));
+                startActivity(new Intent(profil.this, chat_uebersicht.class ));
             }
         });
         ImageButton btnmusic = (ImageButton) findViewById(R.id.btn_music);
