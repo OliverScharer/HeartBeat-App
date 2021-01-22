@@ -30,7 +30,7 @@ public class chat_uebersicht extends AppCompatActivity
         chatlist.add(new ChatItem( R.drawable.profil, "Ulrike Meinhof", R.drawable.heart));
         chatlist.add(new ChatItem( R.drawable.sick, "Simon Hees", R.drawable.heart_blue));
         chatlist.add(new ChatItem( R.drawable.profil, "Horst Ludwig Meyer", R.drawable.heart));
-        chatlist.add(new ChatItem( R.drawable.profil, "Horst Ludwig Meyer", R.drawable.heart));
+        chatlist.add(new ChatItem( R.drawable.profil, "Brigitte Mohnhaupt", R.drawable.heart));
         chatlist.add(new ChatItem( R.drawable.profil, "Andreas Baader", R.drawable.heart));
         chatlist.add(new ChatItem( R.drawable.profil, "Ingeborg Barz", R.drawable.heart));
         chatlist.add(new ChatItem( R.drawable.profil, "Monika Berberich", R.drawable.heart));
