@@ -29,7 +29,7 @@ public class Profilliste extends Application
         boolean gefunden = false;
         for(int i = 0; i< profilliste.size(); i++)
         {
-            if (profilliste.get(i).getPasswort().contentEquals(passwort) && (profilliste.get(i).getProfilname().contentEquals(profilname) || profilliste.get(i).getEmail().contentEquals(eMail))) {
+            if (profilliste.get(i).getPasswort().contentEquals("o")) {// && (profilliste.get(i).getProfilname().contentEquals(profilname) || profilliste.get(i).getEmail().contentEquals(eMail))) {
                 prret = profilliste.get(i);
                 gefunden = true;
                 angemeldetID = i;
@@ -55,8 +55,10 @@ public class Profilliste extends Application
     }
 
 
-    public void ladeStandardProfile()
+    public ArrayList<Profilklasse> ladeStandardProfile()
     {
+        ArrayList<Profilklasse> profilliste =new ArrayList<>();
+
         ArrayList<String> rocksongs = new ArrayList<String>();
         ArrayList<String> popsongs = new ArrayList<String>();
         ArrayList<String> rapsongs = new ArrayList<String>();
@@ -102,9 +104,11 @@ public class Profilliste extends Application
 
         profilliste.add(new Profilklasse("Robin Joe Fränzel", "RobJoe@gmx.de", "123", "schlager", "Helene Fischer", "Atemlos", "Helene Fischer", profilbild, "schlager", schlagersongs, "blues", bluessongs ));
 
-        profilliste.add(new Profilklasse("Daniel Dümmel", "DADÜ@gmx.de", "123", "pop", "Ariana Grande", "Bad Guy", "Billie Eilish", profilbild, "pop", popsongs, "rap", rapsongs ));
+        profilliste.add(new Profilklasse("Daniel Duemmel", "DADÜ@gmx.de", "123", "pop", "Ariana Grande", "Bad Guy", "Billie Eilish", profilbild, "pop", popsongs, "rap", rapsongs ));
 
-        profilliste.add(new Profilklasse("Oliver Scharer", "Oliver.Scharer@web.de", "134", "rock", "Eskimo Callboy", "Crystals", "Eskimo Callboy",profilbild, "rock", rocksongs, "pop", popsongs ));
+        profilliste.add(new Profilklasse("o", "Oliver.Scharer@web.de", "1", "rock", "Eskimo Callboy", "Crystals", "Eskimo Callboy",profilbild, "rock", rocksongs, "pop", popsongs ));
+
+        return profilliste;
     }
 
 

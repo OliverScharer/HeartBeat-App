@@ -1,5 +1,6 @@
 package com.example.heartbeat;
 
+import android.app.Application;
 import android.widget.ImageView;
 
 import java.util.ArrayList;

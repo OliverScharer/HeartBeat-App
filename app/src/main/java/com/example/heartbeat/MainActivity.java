@@ -31,9 +31,7 @@ public class MainActivity extends AppCompatActivity {
         startbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Profilliste p = new Profilliste();
-                p.ladeStandardProfile();
-                startActivity(new Intent(MainActivity.this, profil.class));
+                startActivity(new Intent(MainActivity.this, login.class));
             }
 
         });

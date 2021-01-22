@@ -1,28 +1,39 @@
 package com.example.heartbeat;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class register extends AppCompatActivity
+public class register extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
-        TextView wechsellinkTxt = (TextView) findViewById(R.id.wechsellinkTxt);
+        TextView wechsellinkTxt = findViewById(R.id.wechsellinkTxt);
+
+        Spinner sexAusrichtSp = findViewById(R.id.dd_sexAusricht);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.sex, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sexAusrichtSp.setAdapter(adapter);
+        sexAusrichtSp.setOnItemSelectedListener(this);
+
         wechsellinkTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(register.this, login1.class));
             }
         });
-
 
         //registriervorgang
         Button registrierButton = (Button)findViewById(R.id.registrierButton2);
@@ -49,8 +60,9 @@ public class register extends AppCompatActivity
                 if (!benS.isEmpty() && !mailS.isEmpty() && pwKorrekt)
                 {
                     Profilklasse pr = new Profilklasse(benS, mailS, pwS);
-                    ((Profilliste) getApplication()).addProfil(pr);
-                    ((Profilliste) getApplication()).setPrret(pr);
+                    Profilliste pro = (Profilliste) getApplication();
+                    pro.addProfil(pr);
+                    pro.setPrret(pr);
                     startActivity(new Intent(register.this, profilanlegen.class));
                 }
                 else if (!pwKorrekt)
@@ -61,7 +73,20 @@ public class register extends AppCompatActivity
             }
         });
 
+    }
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
+
+        ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+        ((TextView) parent.getChildAt(0)).setTextSize(18);
+        String text = parent.getItemAtPosition(position).toString();
+        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
 
     }
 }

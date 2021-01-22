@@ -7,6 +7,27 @@
     android:background="@color/black">
 
     <TextView
+        android:id="@+id/pwbestTxt2"
+        android:layout_width="186dp"
+        android:layout_height="25dp"
+        android:text="Auf der Suche nach:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/dd_sexAusricht"
+        app:layout_constraintStart_toStartOf="@+id/dd_sexAusricht" />
+
+    <Spinner
+        android:id="@+id/dd_sexAusricht"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_et"
+        app:layout_constraintEnd_toEndOf="@+id/liebKuenstET"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/liebKuenstET"
+        app:layout_constraintTop_toBottomOf="@+id/registerbestPasswort" />
+
+    <TextView
         android:id="@+id/slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,20 +83,20 @@
         android:id="@+id/benutzername"
         android:layout_width="230dp"
         android:layout_height="40dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/round_et"
         android:ems="10"
-        android:textAlignment="center"
         android:hint=" Benutzername"
         android:importantForAutofill="no"
         android:inputType="text"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registrierungtxt" />
 
     <TextView
-        android:id="@+id/lieblingskuenstler"
+        android:id="@+id/accountname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" E-Mail"
@@ -88,13 +109,13 @@
         android:id="@+id/liebKuenstET"
         android:layout_width="230dp"
         android:layout_height="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/round_et"
         android:ems="10"
-        android:textAlignment="center"
         android:hint=" E-Mail"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,13 +135,13 @@
         android:id="@+id/gebJahrET"
         android:layout_width="230dp"
         android:layout_height="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/round_et"
         android:ems="10"
-        android:textAlignment="center"
         android:hint=" Passwort"
         android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,13 +161,13 @@
         android:id="@+id/registerbestPasswort"
         android:layout_width="230dp"
         android:layout_height="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/round_et"
         android:ems="10"
-        android:textAlignment="center"
         android:hint=" Passwort"
         android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,7 +185,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerbestPasswort" />
+        app:layout_constraintTop_toBottomOf="@+id/dd_sexAusricht" />
 
     <TextView
         android:id="@+id/wechsellinkTxt"
@@ -182,14 +203,14 @@
         android:id="@+id/registrierButton2"
         android:layout_width="250dp"
         android:layout_height="90dp"
-        android:layout_marginBottom="100dp"
-        android:text="Weiter"
+        android:layout_marginBottom="10dp"
 
+        android:text="Weiter"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:backgroundTint="@color/Lila"
         app:cornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

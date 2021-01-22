@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class profilanlegen extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
-    Profilklasse pr = ((Profilliste) this.getApplication()).getPrret();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profilanlegen);
@@ -26,11 +25,6 @@ public class profilanlegen extends AppCompatActivity implements AdapterView.OnIt
         genresSp.setAdapter(adapter);
         genresSp.setOnItemSelectedListener(this);
 
-        Spinner sexAusrichtSp = findViewById(R.id.dd_sex);
-        ArrayAdapter<CharSequence> adapterSA = ArrayAdapter.createFromResource(this,R.array.sex, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        sexAusrichtSp.setAdapter(adapterSA);
-        sexAusrichtSp.setOnItemSelectedListener(this);
 
         Button registrierButton2 = (Button)findViewById(R.id.registrierButton2);
         registrierButton2.setOnClickListener(new View.OnClickListener() {

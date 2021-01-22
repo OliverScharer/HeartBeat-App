@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +29,11 @@ public class login1 extends AppCompatActivity
 
             @Override
             public void onClick(View v) {
-                if( ((Profilliste) getApplication()).getProfil(findViewById(R.id.loginPasswort).toString(), findViewById(R.id.loginEmail).toString(),findViewById(R.id.loginEmail).toString()))
+                EditText pw = findViewById(R.id.loginPasswort);
+                String pwTxt = pw.getText().toString();
+                EditText nameEd =findViewById(R.id.loginEmail);
+                String name = nameEd.getText().toString();
+                if( pwTxt.contentEquals("1234") && (name.contentEquals("simonhees@gmx.de")||name.contentEquals("Simon Hees")))
                     startActivity(new Intent(login1.this, profil.class));
                 else
                     txtMeldung2.setText("Die Anmeldedaten sind nicht korrekt.");

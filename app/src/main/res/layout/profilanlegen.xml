@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
-    <Spinner
-        android:id="@+id/dd_sexAusricht"
-        android:layout_width="230dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/round_et"
-        app:layout_constraintEnd_toEndOf="@+id/liebKuenstET"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/liebKuenstET"
-        app:layout_constraintTop_toBottomOf="@+id/gebJahrET" />
-
     <TextView
         android:id="@+id/slogan"
         android:layout_width="wrap_content"
@@ -57,7 +46,7 @@
         app:layout_constraintStart_toStartOf="@+id/dd_Genres" />
 
     <TextView
-        android:id="@+id/lieblingskuenstler"
+        android:id="@+id/accountname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lieblingskuenstler"
@@ -149,16 +138,6 @@
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/liebLiedIntET3" />
-
-    <TextView
-        android:id="@+id/pwbestTxt"
-        android:layout_width="186dp"
-        android:layout_height="25dp"
-        android:text="Auf der Suche nach:"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/dd_sexAusricht"
-        app:layout_constraintStart_toStartOf="@+id/dd_sexAusricht" />
 
     <Button
         android:id="@+id/registrierButton2"
